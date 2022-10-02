@@ -1,0 +1,11 @@
+.boxName {
+    font-family: monospace;
+    font-size: 0.8rem;
+    color: var(--mainColor);
+    border-radius: 6px;
+    padding: 0rem 0.2rem;
+}
+
+.boxName:hover {
+    background-color: #ddd;
+}

@@ -1,0 +1,65 @@
+.comment {
+    width: 100%;
+    margin:1rem 0rem;
+}
+
+.comment .meta {
+    color: #888;
+    font-family: monospace;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 0.2rem;
+}
+
+.comment .meta>svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+
+.comment>.body{
+    font-family: verdana;
+    margin: 0rem 0.5rem;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+    border-left: solid 1px #888;
+    width: 100%;
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+
+.comment>.body>.meta{
+    margin-top: 0.8rem;
+}
+
+.code {
+    font-family: monospace;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin: 1rem auto;
+    background-color: #0d1117;
+    border-radius: 12px;
+    height: fit-content;
+    width: 90%;
+    color: #eee;
+    font-size: 1rem;
+}
+
+.code>p {
+    margin: 0;
+}
+
+.bottomBar {
+    margin-bottom: 0.5rem;
+}
+
+.bottomBar>svg{
+    margin:0rem 0.5rem;
+}
+
+.bottomBar>svg:hover {
+    cursor: pointer;
+    fill:#888;
+}

@@ -1,0 +1,11 @@
+.userName {
+    font-family: monospace;
+    font-size: 0.8rem;
+    color: #888;
+    border-radius: 6px;
+    padding: 0rem 0.2rem;
+}
+
+.userName:hover {
+    background-color: #ddd;
+}

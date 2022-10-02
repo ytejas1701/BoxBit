@@ -1,0 +1,42 @@
+@keyframes loading {
+    0% {
+        background-color:var(--mainColor);
+        width: 50px; 
+        height: 50px;
+    }
+    5%{
+        background-color:var(--mainColor);
+    }
+    100% { 
+        background-color: transparent;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.outer {
+    width: 100px;
+    height: 100px;
+    margin: 0rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inner {
+    border-radius: 50%;
+
+    animation-name: loading;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.fixed {
+    background-color: var(--mainColor);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+}

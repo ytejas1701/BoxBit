@@ -1,0 +1,105 @@
+.appbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0d1117;
+    height: 45px;
+    width: 100%;
+    border-bottom:1px solid #eee;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchBox {
+    margin: 2rem;
+    margin-right: auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60%;
+    background-color: #242e3e;
+    border-radius: 6px;
+}
+
+.searchBox>svg {
+    margin: 0rem;
+    background-color: transparent;
+    height:1rem;
+    width:1rem;
+    padding: 0rem 0.5rem;
+    fill:#3b4c69;
+}
+
+.searchBox input{
+    font-size: 1rem;
+    margin: 0rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 6px;
+    border: none;
+    width: 30rem;
+    color: #eee;
+    background-color: #242e3e;
+}
+.searchBox input::placeholder{
+    font-size: 1rem;
+    color: #888;
+}
+.appbar input:focus{
+    outline: none;
+}
+
+.appbar>.logo{
+    margin: 4px 8px;
+
+    color: var(--mainColor);
+    font-family: monospace;
+    font-size: 32px;
+}
+
+.appbar>.icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0rem 1rem;
+    gap:1rem;
+}
+
+
+.appbar>.icons>svg{
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 6px;
+    fill: #3b4c69;
+}
+
+.appbar>.icons>svg:hover{
+    cursor: pointer;
+}
+
+.appbar>.icons>.username{
+    padding-right: 0.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    font-size: 1rem;
+    border-radius: 6px;
+    color:#32de84
+}
+
+.appbar>.icons>.username>svg{
+    padding: 0.4rem;
+    height: 1.2rem;
+    width: 1.2rem;
+    fill:#32de84;
+}
+
+.appbar>.icons>.username:hover{
+    background-color: #242e3e;
+    cursor: pointer;
+}

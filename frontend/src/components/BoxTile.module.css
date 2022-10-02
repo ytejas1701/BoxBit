@@ -1,0 +1,44 @@
+.boxTile {
+    height: fit-content;
+    padding: 1.6rem;
+    box-sizing: border-box;
+    width: inherit;
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #fff;
+    border-radius: 12px;
+    border: 1px solid var(--mainColor);
+    color: #333;
+    font-family: sans-serif;
+    word-wrap: break-word;
+}
+
+.boxTile>.boxName {
+    color: var(--mainColor);
+    font-family: monospace;
+    font-size: 2rem;
+    align-self: center;
+    margin-bottom: 1rem;
+}
+
+.boxTile>.boxMeta {
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    color: #666;
+    font-size: 0.8rem;
+}
+
+.boxTile>.boxMeta>.adminList {
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+    color: #333;
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
+

@@ -1,0 +1,84 @@
+.newComment {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.newComment>textarea {
+    color: #333;
+    resize: vertical;
+    padding: 0.5rem;
+    font-family: verdana;
+    border-radius: 12px;
+    border: none;
+    width: 100%;
+    height: 120px;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin: 0rem;
+}
+
+.newComment>textarea:focus {
+    outline: none;
+}
+
+
+.newComment button {
+    margin-left: auto;
+    border: none;
+    background-color: var(--mainColor);
+    color: #fff;
+    width: fit-content;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: monospace;
+}
+
+.newComment button:disabled {
+    background-color: #888;
+    border: none;
+}
+
+.newComment button:enabled:hover {
+    cursor: pointer;
+}
+
+.newComment svg {
+    height: 1.2rem;
+    width: 1.2rem;
+    padding: 0.2rem;
+    border-radius: 6px;
+    fill:#888;
+}
+
+.newComment svg:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+.newComment .actions {
+    display: flex;
+    flex-direction: row;
+    padding:0.4rem;
+    height:fit-content;
+    background-color: #eee;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.code {
+    font-family: monospace;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin: 1rem auto;
+    background-color: #0d1117;
+    border-radius: 12px;
+    height: fit-content;
+    width: 90%;
+    color: #eee;
+    font-size: 1rem;
+}

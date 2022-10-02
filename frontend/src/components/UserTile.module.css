@@ -1,0 +1,73 @@
+.userTile {
+    height: fit-content;
+    padding: 1.6rem;
+    box-sizing: border-box;
+    width: inherit;
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #fff;
+    border-radius: 12px;
+    border: 1px solid #32de84;
+    color: #333;
+    font-family: sans-serif;
+    word-wrap: break-word;
+}
+
+.userTile>.username {
+    color: #32de84;
+    font-family: monospace;
+    font-size: 2rem;
+    align-self: center;
+    margin-bottom: 1rem;
+}
+
+.userTile button {
+    padding:0.5rem;
+    margin-top: 0.5rem;
+    align-self: flex-end;
+    background-color: transparent;
+    border: 2px solid #32de84;
+    border-radius: 6px;
+    color: #32de84;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+.userTile button:hover {
+    cursor: pointer;
+}
+
+.field {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap:0.5rem;
+    font-family: verdana;
+    font-size: 0.9rem;
+    color: #444;
+    margin-top: 1rem;
+}
+
+.field svg {
+    height:1.2rem;
+    width: 1.2rem;
+}
+
+.star {
+    fill: skyblue;
+}
+
+.upvote {
+    fill: skyblue;
+}
+
+.answer {
+    fill: var(--mainColor);
+}
+
+.date {
+    fill:#32de84;
+}

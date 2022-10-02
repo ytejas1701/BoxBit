@@ -1,0 +1,13 @@
+.mainColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sideColumn {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+

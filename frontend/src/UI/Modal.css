@@ -1,0 +1,234 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 45px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.show {
+    display: block;
+}
+
+@keyframes loading {
+    from {
+        border-color: transparent;
+    }
+    to {
+        border-color: var(--mainColor);
+    }
+}
+
+.content {
+    height: fit-content;
+    width: fit-content;
+    margin: 1rem auto;
+    background-color: #0d1117;
+    border-radius: 12px;
+    border: 1px solid #242e3e;
+    padding: 1rem;
+    box-sizing: border-box;
+    border: 5px solid transparent;
+}
+
+.loading {
+    animation-name: loading;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
+}
+
+.content>.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content>.header>.title {
+    font-family: monospace;
+    color: var(--mainColor);
+    font-size: 1.5rem;
+}
+
+.content>.header>svg {
+    height: 1.2rem;
+    width: 1.2rem;
+    fill: #ccc;
+}
+
+.content>.header>svg:hover {
+    cursor: pointer;
+}
+
+.content>form {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0rem 0rem;
+}
+
+.content label {
+    color: #888;
+    font-family: verdana;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.content input,
+.content textarea{
+    font-size: 1.1rem;
+    margin: 0.5rem 0rem 0rem;
+    padding: 0.4rem;
+    border-radius: 6px;
+    border: none;
+    width: fit-content;
+    color: #eee;
+    background-color: #242e3e;
+    font-family: monospace;
+    resize: none;
+    border:1px solid transparent;
+}
+input.invalid,
+textarea.invalid {
+    border-color: #eee;
+}
+
+.content textarea {
+    width: 360px;
+    height: 200px;
+    font-family: verdana;
+    font-size: 0.9rem;
+}
+.content input,
+.content textarea:focus{
+    outline: none;
+}
+
+.content form button {
+    width: fit-content;
+    align-self: flex-end;
+    padding: 0.5rem;
+    background-color: var(--mainColor);
+    color: #0d1117;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: monospace;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+.content form button:enabled:hover {
+    cursor: pointer;
+}
+
+.content form button:disabled {
+    background-color: #333;
+    border: none;
+}
+
+.newBitForm textarea{
+    width:720px;
+    resize: vertical;
+}
+
+.bitTitle {
+    font-family: verdana !important;
+    width:720px !important;
+}
+
+label.tag{
+    color: #ddd;
+    margin-top:0rem;
+    margin: 0.5rem 0rem;
+}
+
+.boxNameSearch {
+    padding: 0rem;
+    margin: 0rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.boxNameSearch {
+    padding: 0rem;
+    margin: 0rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid transparent;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 6px;
+    margin: 0.5rem 0rem;
+    background-color: #242e3e;
+}
+
+.boxNameSearch input {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin:0rem
+}
+
+.boxNameSearch svg {
+    height: 1.2rem;
+    width: 1.2rem;
+    padding: 0.5rem;
+    fill: #fff;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.boxNameSearch svg:hover {
+    cursor:pointer;
+}
+
+.boxNameSearch button {
+    margin: 0.5rem 0rem !important;
+}
+
+.found {
+    border-color: var(--mainColor);
+}
+
+.found svg {
+    fill: var(--mainColor);
+}
+
+.error {
+    text-align: right;
+    font-size: 1rem !important;
+    color: #ddd !important;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    padding:0.4rem;
+    height:fit-content;
+    background-color: rgb(26, 33, 45);
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.actions svg {
+    height: 1.2rem;
+    width: 1.2rem;
+    padding: 0.2rem;
+    border-radius: 6px;
+    fill:#445776;
+}
+
+.actions svg:hover {
+    cursor: pointer;
+    background-color: #242e3e;
+}
+
+.bodyInput {
+    border-radius: 12px;
+    height: fit-content;
+    background-color: #242e3e;
+}

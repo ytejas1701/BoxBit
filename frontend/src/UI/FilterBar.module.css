@@ -1,0 +1,48 @@
+.filterBar {
+    width: inherit;
+    height: fit-content;
+    padding: 0.5rem;
+    gap: 1rem;
+
+    display: flex;
+    flex: row;
+    align-items: center;
+
+    background-color: #fff;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+    color: #aaa;
+    font-family: verdana;
+}
+
+.selected {
+    color: var(--mainColor);
+}
+
+.filterBar>.option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.2rem;
+    margin-right: 0.2rem;
+    padding:0.2rem;
+    border-radius: 6px;
+    border: 1px solid transparent;
+}
+
+.filterBar>.option>svg{
+    width:1.5rem;
+    height: 1.5rem;
+    fill:#aaa;
+}
+
+.filterBar>.option:hover {
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+.selected>svg{
+    fill: var(--mainColor) !important;
+}

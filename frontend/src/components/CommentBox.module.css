@@ -1,0 +1,11 @@
+.commentBox {
+    background-color: #fff;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    
+    height: fit-content;
+
+    padding: 0rem 1rem;
+    padding-right: 2rem;
+    box-sizing: border-box;
+}

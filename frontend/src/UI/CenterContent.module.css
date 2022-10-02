@@ -1,0 +1,7 @@
+.centerContent {
+    width: fit-content;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
