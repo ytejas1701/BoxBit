@@ -7,9 +7,7 @@ I developed the backend with ExpressJS, using MongoDB for persistence of data. F
 ## Features
 
 ## Gallery
-<p>
-  <img src="./screenshots/img1.png" width="400" />
-  <img src="./screenshots/img2.png" width="400" /> 
-  <img src="./screenshots/img3.png" width="400" />
-  <img src="./screenshots/img4.png" width="400" /> 
-</P
+  <img src="./screenshots/img1.png" />
+  <img src="./screenshots/img2.png" /> 
+  <img src="./screenshots/img3.png" />
+  <img src="./screenshots/img4.png" /> 
