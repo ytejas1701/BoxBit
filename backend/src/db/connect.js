@@ -1,10 +1,11 @@
 import mongoose from "mongoose";
+import dotenv from "dotenv"
+dotenv.config()
 
-mongoose.connect('mongodb://127.0.0.1:27017/boxbit-api', 
-    { useNewUrlParser: true }).then((result)=>{
-        console.log('mongoose connected on server '+ 27017);
-    }).catch((error)=>{
-        console.log(error);
-    });
+console.log(JSON.stringify(process.env.MONGO_URI))
+
+mongoose.connect(process.env.MONGO_URI)
+    .then(()=>console.log('connected with mongodb successfully'))
+    .catch((error)=>console.log(error))
 
 export { mongoose };
