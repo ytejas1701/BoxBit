@@ -3,7 +3,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 const createBit = createAsyncThunk(
     'bit/createBit',
     async ({token, data})=>{
-        const response = await fetch('http://localhost:8000/bit/', {
+        const response = await fetch(process.env.BACKEND_URL+'/bit/', {
             method:'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -20,7 +20,7 @@ const fetchBitById = createAsyncThunk(
     'bit/fetchBitById',
     async ({token, bitId})=>{
         try{
-            const response = await fetch('http://localhost:8000/bit/'+bitId, {
+            const response = await fetch(process.env.BACKEND_URL+'/bit/'+bitId, {
                 method:'GET',
                 headers:{
                     'Authorization':'Bearer '+token
@@ -38,7 +38,7 @@ const fetchBitById = createAsyncThunk(
 const fetchBits = createAsyncThunk(
     'bit/fetchBits',
     async ({token, boxId, filter})=>{
-        const bits = await fetch('http://localhost:8000/box/'+ boxId + '/bit?filter='+filter, {
+        const bits = await fetch(process.env.BACKEND_URL+'/box/'+ boxId + '/bit?filter='+filter, {
                 method:'GET',
                 headers:{
                     'Authorization':'Bearer '+ token
@@ -52,7 +52,7 @@ const fetchBits = createAsyncThunk(
 const fetchBitsOfUser = createAsyncThunk(
     'bit/fetchBitsOfUser',
     async ({token, userId, filter})=>{
-        const bits = await fetch('http://localhost:8000/user/'+ userId + '/bit?filter=' + filter, {
+        const bits = await fetch(process.env.BACKEND_URL+'/user/'+ userId + '/bit?filter=' + filter, {
                 method:'GET',
                 headers:{
                     'Authorization':'Bearer '+ token
