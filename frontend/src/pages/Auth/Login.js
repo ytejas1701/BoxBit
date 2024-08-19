@@ -59,7 +59,7 @@ const Login = ()=>{
                     email:enteredEmail,
                     password:enteredPassword,
                 });        
-                const response = await fetch('http://localhost:8000/user/login', {
+                const response = await fetch(process.env.BACKEND_URL+'/user/login', {
                     method:'POST',
                     headers: {
                         'Content-Type': 'application/json'
