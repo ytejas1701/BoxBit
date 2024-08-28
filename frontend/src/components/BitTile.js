@@ -31,7 +31,7 @@ const BitTile = ({bit, isExpanded})=>{
             upVotes:updatedUpVotes,
             downVotes:updatedDownVotes,
         })
-        const response = await fetch(process.env.BACKEND_URL+bit._id, {
+        const response = await fetch(process.env.REACT_APP_BACKEND_URL+bit._id, {
             method: 'PATCH',
             headers:{
                 'Authorization':'Bearer '+user.token,

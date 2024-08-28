@@ -59,7 +59,7 @@ const Login = ()=>{
                     email:enteredEmail,
                     password:enteredPassword,
                 });        
-                const response = await fetch(process.env.BACKEND_URL+'/user/login', {
+                const response = await fetch(process.env.REACT_APP_BACKEND_URL+'/user/login', {
                     method:'POST',
                     headers: {
                         'Content-Type': 'application/json'

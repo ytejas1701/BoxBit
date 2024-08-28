@@ -79,7 +79,7 @@ const Register = ()=>{
                     password:enteredPassword,
                     username:enteredUsername,
                 });        
-                const response = await fetch(process.env.BACKEND_URL+'/user/register', {
+                const response = await fetch(process.env.REACT_APP_BACKEND_URL+'/user/register', {
                         method:'POST',
                         headers: {
                             'Content-Type': 'application/json'

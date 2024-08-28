@@ -3,7 +3,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 const fetchComments = createAsyncThunk(
     'comment/fetchComments',
     async ({token, bitId, filter})=>{
-        const comments = await fetch(process.env.BACKEND_URL+'/bit/'+ bitId + '/comment?filter='+filter, {
+        const comments = await fetch(process.env.REACT_APP_BACKEND_URL+'/bit/'+ bitId + '/comment?filter='+filter, {
                 method:'GET',
                 headers:{
                     'Authorization':'Bearer '+ token

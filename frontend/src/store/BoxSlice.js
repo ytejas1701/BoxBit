@@ -4,7 +4,7 @@ const fetchBoxByName = createAsyncThunk(
     'box/fetchBoxByName',
     async ({token, boxName})=>{
         try{
-        const responseBox = await fetch(process.env.BACKEND_URL+'/box/'+boxName, {
+        const responseBox = await fetch(process.env.REACT_APP_BACKEND_URL+'/box/'+boxName, {
             method:'GET',
             headers:{
                 'Authorization':'Bearer ' + token
@@ -21,7 +21,7 @@ const createBox = createAsyncThunk(
     'box/createBox',
     async ({token, data})=>{
         try{
-            const response = await fetch(process.env.BACKEND_URL+'/box/', {
+            const response = await fetch(process.env.REACT_APP_BACKEND_URL+'/box/', {
                 method:'POST',
                 headers: {
                     'Content-Type': 'application/json',

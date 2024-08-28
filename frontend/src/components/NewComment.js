@@ -15,7 +15,7 @@ const NewComment = ({bitId, level, parentId})=>{
             userId:user.userId,
             username:user.username,
         }
-        const response = await fetch(process.env.BACKEND_URL+'/comment/', {
+        const response = await fetch(process.env.REACT_APP_BACKEND_URL+'/comment/', {
             method:'POST',
             headers:{
                 "Content-Type":"application/json",

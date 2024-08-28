@@ -10,6 +10,8 @@ import Box from "./pages/Box/Box.js";
 import Bit from "./pages/Bit/Bit";
 import User from "./pages/User/User";
 
+console.log(process.env.REACT_APP_BACKEND_URL)
+
 const App = ()=>{
   const auth = useSelector((state)=>state.Auth);
   return (

@@ -3,7 +3,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 const fetchUser = createAsyncThunk(
     'user/fetchUser',
     async ({token, userId})=>{
-        try{const response = await fetch(process.env.BACKEND_URL+'/user/'+ userId, {
+        try{const response = await fetch(process.env.REACT_APP_BACKEND_URL+'/user/'+ userId, {
             method:'GET',
             headers:{
                 'Authorization':'Bearer ' + token
