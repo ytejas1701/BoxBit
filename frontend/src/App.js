@@ -16,7 +16,7 @@ const App = ()=>{
   const auth = useSelector((state)=>state.Auth);
   return (
       <Routes>
-        <Route path='/' element={<Navigate to='box/NewBox'/>}/>
+        <Route path='/' element={<Navigate to='login'/>}/>
         <Route path='box/:name' element={<Box/>}/>
         <Route path='box/:name/bit/:id' element={<Bit/>}/>
         <Route path='bit' element={<Bit/>}/>

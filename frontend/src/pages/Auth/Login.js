@@ -73,7 +73,7 @@ const Login = ()=>{
                     dispatch(login(responseObject));
                     setLoading(false);
                     setErrorTag("Successfully Authenticated!");
-                    navigate("/");
+                    navigate("/box/WebDev");
                 }
             }catch(error){
                 console.log({error});
